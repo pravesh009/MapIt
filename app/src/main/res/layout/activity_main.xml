@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <!-- Text Label -->
+
+    <EditText
+        android:id="@+id/from"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="From:"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/to"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/to"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="To:"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="55dp"
+        android:text="Welcome to Yodlee"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/from"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="208dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="235dp"
+        android:background="@android:color/black"
+        android:text="Get Directions"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to" />
+
+
+    <!-- Spinner Element -->
+
+
+</android.support.constraint.ConstraintLayout>
